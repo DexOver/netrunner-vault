@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#080a0e"/>
+  <g fill="none" stroke="#f5e642" stroke-width="6">
+    <rect x="56" y="56" width="80" height="6"/>
+    <rect x="56" y="56" width="6" height="80"/>
+    <rect x="376" y="56" width="80" height="6"/>
+    <rect x="450" y="56" width="6" height="80"/>
+    <rect x="56" y="450" width="80" height="6"/>
+    <rect x="56" y="376" width="6" height="80"/>
+    <rect x="376" y="450" width="80" height="6"/>
+    <rect x="450" y="376" width="6" height="80"/>
+  </g>
+  <g transform="translate(256 256)">
+    <circle r="120" fill="none" stroke="#f5e642" stroke-width="3" opacity="0.4"/>
+    <circle r="90" fill="none" stroke="#f5e642" stroke-width="2" opacity="0.25"/>
+    <path d="M -50 -40 L 50 -40 L 50 30 Q 50 65 0 80 Q -50 65 -50 30 Z"
+          fill="#f5e642" opacity="0.92"/>
+    <rect x="-12" y="-15" width="24" height="36" rx="3" fill="#080a0e"/>
+    <circle cx="0" cy="-3" r="5" fill="#f5e642"/>
+    <rect x="-2" y="-3" width="4" height="14" fill="#f5e642"/>
+  </g>
+  <text x="256" y="430" text-anchor="middle"
+        font-family="ui-monospace,monospace" font-size="32"
+        font-weight="700" fill="#f5e642" letter-spacing="6">NETRUNNER</text>
+</svg>
