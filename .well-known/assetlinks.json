@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.dexover.netrunner",
+      "sha256_cert_fingerprints": [
+        "18:78:8C:58:DE:53:F8:4F:90:DD:8D:5C:28:5C:7F:F6:D5:80:8C:4E:C5:E3:DB:9B:50:7F:70:C1:1E:33:19:5A"
+      ]
+    }
+  }
+]
