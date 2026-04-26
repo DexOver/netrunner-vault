@@ -650,7 +650,12 @@ async function aesDec(p,key){
 }
 // SECURITY: chunk-based base64 — старая версия падала со stack overflow на больших vault.
 function b64e(u){let s='';const C=0x8000;for(let i=0;i<u.length;i+=C)s+=String.fromCharCode.apply(null,u.subarray(i,i+C));return btoa(s);}
-function b64d(s){return Uint8Array.from(atob(s),c=>c.charCodeAt(0));}
+function b64d(s){
+  // добавляем padding если отсутствует (старые бэкапы сохраняли без '==')
+  s=s.replace(/-/g,'+').replace(/_/g,'/');
+  while(s.length%4)s+='=';
+  return Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+}
 
 // ── HELPERS ──
 const $=id=>document.getElementById(id);
